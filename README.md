@@ -1,5 +1,8 @@
 # ShareX
 
+########## This Application can build through microsoft Visual Studio #################
+
+
 [![Build status](https://img.shields.io/appveyor/ci/ShareX/sharex.svg?label=Build&maxAge=60)](https://ci.appveyor.com/project/ShareX/sharex)
 [![License](https://img.shields.io/github/license/ShareX/ShareX.svg?label=License&maxAge=86400)](./LICENSE.txt)
 [![Release](https://img.shields.io/github/release/ShareX/ShareX.svg?label=Release&maxAge=60)](https://github.com/ShareX/ShareX/releases/latest)
