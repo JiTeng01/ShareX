@@ -34,13 +34,13 @@ namespace ShareX.ImageEffectsLib
     [Description("Background")]
     public class DrawBackground : ImageEffect
     {
-        [DefaultValue(typeof(Color), "Black"), Editor(typeof(MyColorEditor), typeof(UITypeEditor)), TypeConverter(typeof(MyColorConverter))]
+        [DefaultValue(typeof(Color), "White"), Editor(typeof(MyColorEditor), typeof(UITypeEditor)), TypeConverter(typeof(MyColorConverter))]
         public Color Color { get; set; }
 
         [DefaultValue(false)]
         public bool UseGradient { get; set; }
 
-        [DefaultValue(typeof(Color), "White"), Editor(typeof(MyColorEditor), typeof(UITypeEditor)), TypeConverter(typeof(MyColorConverter))]
+        [DefaultValue(typeof(Color), "Black"), Editor(typeof(MyColorEditor), typeof(UITypeEditor)), TypeConverter(typeof(MyColorConverter))]
         public Color Color2 { get; set; }
 
         [DefaultValue(LinearGradientMode.Vertical)]
