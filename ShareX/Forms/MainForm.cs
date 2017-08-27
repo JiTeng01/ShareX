@@ -1072,6 +1072,7 @@ namespace ShareX
         {
             if (e.CloseReason == CloseReason.UserClosing && Program.Settings.ShowTray && !forceClose)
             {
+                MessageBox.Show("Thanks for using ShareX :) ");
                 e.Cancel = true;
                 Hide();
                 SettingManager.SaveAllSettingsAsync();
