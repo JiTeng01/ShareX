@@ -7,9 +7,8 @@ namespace ShareX.HelpersLib.UnitTest
     public class ImageHelpersTest
     {
         public static string resourcePath = Directory.GetCurrentDirectory() + "/Resources/";
-        public static string testImage1Path = resourcePath + "TestImage1.jpg";
-        public static string testImage2Path = resourcePath + "TestImage2.jpg";
-
+        public static string testImage1Path = resourcePath + "TestImage.jpg";
+        
         [TestMethod]
         public void ResizeImage1Test()
         {
