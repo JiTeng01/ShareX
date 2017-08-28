@@ -2,6 +2,7 @@
 1. MSBuild 15.0 or above
 2. Nuget package
 3. Git Bash
+4. Windows SDK
 
 ####Build Step####
 
