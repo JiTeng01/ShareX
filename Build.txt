@@ -1,0 +1,8 @@
+Requirements
+-MSBuild Version 15+
+-NuGet Packages Manager
+-Windows SDK
+
+Build Without Visual Studio
+1. run "nuget restore ShareX.sln" to download all dependencies of the project from nuget.org
+2. run "msbuild ShareX.sln" to build the project into executable file(.exe)
