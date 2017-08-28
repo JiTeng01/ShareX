@@ -1,4 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Drawing;
 using System.IO;
 namespace ShareX.HelpersLib.UnitTest
@@ -52,6 +52,14 @@ namespace ShareX.HelpersLib.UnitTest
             Image actualImage = ImageHelpers.ResizeImage(originalImage, 100, 80, true, true, Color.Blue);
             Image expectImage = Image.FromFile(resourcePath + "ResizeImage5TestResult.jpg");
             Assert.IsTrue(compareImage(expectImage, actualImage));
+        }
+        [TestMethod]
+        public void ResizeImage6Test()
+        {
+            Image originalImage = Image.FromFile(testImage1Path);
+            Image actualImage = ImageHelpers.ResizeImage(originalImage, 50,100);
+            Image expectImage = Image.FromFile(resourcePath + "ResizeImage2TestResult.jpg");
+            Assert.IsFalse(compareImage(expectImage, actualImage));
         }
 
         [TestMethod]
@@ -107,6 +115,7 @@ namespace ShareX.HelpersLib.UnitTest
             Image expectImage = Image.FromFile(resourcePath + "ResizeImageByPercentage2TestResult.jpg");
             Assert.IsTrue(compareImage(expectImage, actualImage));
         }
+ 
 
         [TestMethod]
         public void LoadImageTest()
